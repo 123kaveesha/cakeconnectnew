@@ -104,16 +104,16 @@ const AboutUs = () => {
                 img: "/images/Denu.JPG",
               },
               {
-                name: "Nadeesha Perera",
+                name: "Denuwan Perera",
                 role: "Tech Lead",
                 bio: "Developed our innovative platform...",
-                img: "/images/team2.jpg",
+                img: "/images/Denu.JPG",
               },
               {
-                name: "Chamari Silva",
+                name: "Denuwan perera",
                 role: "Marketing Director",
                 bio: "Helping rural bakers establish their brands...",
-                img: "/images/team3.jpg",
+                img: "/images/Denu.JPG",
               },
             ].map((member, idx) => (
               <div className="cakehub-team-member" key={idx}>
