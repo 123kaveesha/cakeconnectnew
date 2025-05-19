@@ -1,0 +1,174 @@
+.cakehub-nav-bar {
+  background-color: white;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.cakehub-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cakehub-nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.cakehub-nav-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.cakehub-nav-middle {
+  flex-grow: 1;
+  margin-left: 40px;
+}
+
+.cakehub-nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cakehub-nav-links li {
+  margin-right: 25px;
+}
+
+.cakehub-nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.cakehub-nav-link:hover {
+  color: #ff6b6b;
+}
+
+.cakehub-nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.cakehub-nav-cart-icon {
+  position: relative;
+  margin-right: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.cakehub-nav-cart-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.cakehub-login-button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cakehub-login-button:hover {
+  background-color: #ff5252;
+}
+
+/* User Dropdown */
+.cakehub-user-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.cakehub-user-greeting {
+  cursor: pointer;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.cakehub-user-greeting:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cakehub-dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cakehub-dropdown-content a,
+.cakehub-dropdown-content button {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cakehub-dropdown-content a:hover,
+.cakehub-dropdown-content button:hover {
+  background-color: #f8f9fa;
+}
+
+.cakehub-user-dropdown:hover .cakehub-dropdown-content {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cakehub-nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cakehub-nav-middle {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .cakehub-nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cakehub-nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .cakehub-nav-right {
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

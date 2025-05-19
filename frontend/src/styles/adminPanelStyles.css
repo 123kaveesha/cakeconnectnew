@@ -1,0 +1,96 @@
+.cakehub-admin-panel {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.cakehub-admin-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.cakehub-admin-layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cakehub-admin-orders {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cakehub-admin-order-card {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #3498db;
+}
+
+.cakehub-admin-order-card h4 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.cakehub-admin-order-card p {
+  margin: 0.25rem 0;
+}
+
+.cakehub-admin-paid {
+  color: green;
+  font-weight: bold;
+}
+
+.cakehub-admin-unpaid {
+  color: red;
+  font-weight: bold;
+}
+
+.cakehub-admin-summary {
+  flex: 1;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.06);
+}
+
+.cakehub-admin-summary h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.cakehub-admin-earnings {
+  font-size: 1.2rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.cakehub-admin-chart-container h4 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+/* Optional Spinner */
+.cakehub-spinner {
+  width: 40px;
+  height: 40px;
+  margin: 2rem auto;
+  border: 4px solid #eee;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: cakehub-spin 1s linear infinite;
+}
+
+@keyframes cakehub-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

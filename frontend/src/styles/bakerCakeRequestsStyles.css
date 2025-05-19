@@ -1,0 +1,79 @@
+.baker-cake-requests {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #5d2a2a;
+}
+
+.status-msg {
+  text-align: center;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: #eef6ee;
+  color: #2e7d32;
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.request-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.request-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+model-viewer {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.request-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.request-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.request-info label {
+  margin-top: 10px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.request-info select {
+  margin-top: 6px;
+  padding: 8px;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}

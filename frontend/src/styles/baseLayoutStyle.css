@@ -1,0 +1,10 @@
+.cakehub-layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.cakehub-layout-main {
+  flex: 1;
+  /* padding: 2rem 1rem; */
+}

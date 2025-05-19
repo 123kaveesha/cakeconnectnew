@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.cakehub-about-container {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.cakehub-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.cakehub-about-hero {
+  position: relative;
+  height: 500px;
+  background-image: url('/images/lineup.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cakehub-hero-overlay {
+  background-color: rgba(93, 42, 42, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 20px;
+}
+
+.cakehub-about-hero h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cakehub-about-hero p {
+  font-size: 1.3rem;
+  color: #f8d7d7;
+  margin-bottom: 0;
+}
+
+/* Mission Section */
+.cakehub-mission-section {
+  padding: 80px 0;
+  background-color: #fff9f9;
+}
+
+.cakehub-mission-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #5d2a2a;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.cakehub-mission-section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #e8a0a0;
+  margin: 15px auto 0;
+}
+
+.cakehub-mission-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cakehub-mission-text {
+  flex: 1;
+}
+
+.cakehub-mission-text p {
+  margin-bottom: 20px;
+  color: #5d2a2a;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.cakehub-mission-gallery {
+  flex: 1;
+  position: relative;
+  height: 400px;
+  min-width: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.cakehub-gallery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.cakehub-gallery-image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+@keyframes cakehubMissionGallery {
+  0%, 20% { opacity: 1; }
+  25%, 100% { opacity: 0; }
+}
+
+.cakehub-gallery-image:nth-child(1) {
+  animation: cakehubMissionGallery 16s infinite;
+}
+.cakehub-gallery-image:nth-child(2) {
+  animation: cakehubMissionGallery 16s infinite 4s;
+}
+.cakehub-gallery-image:nth-child(3) {
+  animation: cakehubMissionGallery 16s infinite 8s;
+}
+.cakehub-gallery-image:nth-child(4) {
+  animation: cakehubMissionGallery 16s infinite 12s;
+}
+
+/* Values Section */
+.cakehub-values-section {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.cakehub-values-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #5d2a2a;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.cakehub-values-section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #e8a0a0;
+  margin: 15px auto 0;
+}
+
+.cakehub-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.cakehub-value-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.cakehub-value-card:hover {
+  transform: translateY(-10px);
+}
+
+.cakehub-value-icon {
+  font-size: 2.5rem;
+  color: #e8a0a0;
+  margin-bottom: 20px;
+}
+
+.cakehub-value-card h3 {
+  color: #5d2a2a;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.cakehub-value-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Team Section */
+.cakehub-team-section {
+  padding: 80px 0;
+  background-color: #f9f3f3;
+}
+
+.cakehub-team-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #5d2a2a;
+  margin-bottom: 15px;
+}
+
+.cakehub-team-subtitle {
+  text-align: center;
+  color: #7a4a4a;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+.cakehub-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.cakehub-team-member {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.cakehub-member-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 5px solid #e8a0a0;
+}
+
+.cakehub-member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cakehub-team-member h3 {
+  color: #5d2a2a;
+  margin-bottom: 5px;
+}
+
+.cakehub-position {
+  color: #e8a0a0;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.cakehub-bio {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* CTA Section */
+.cakehub-cta-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #e8a0a0 0%, #d47e7e 100%);
+  color: white;
+  text-align: center;
+}
+
+.cakehub-cta-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.cakehub-cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cakehub-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cakehub-btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.cakehub-btn-primary {
+  background-color: white;
+  color: #d47e7e;
+  border: 2px solid white;
+}
+
+.cakehub-btn-primary:hover {
+  background-color: rgba(255,255,255,0.9);
+  color: #d47e7e;
+}
+
+.cakehub-btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cakehub-btn-secondary:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .cakehub-mission-content {
+    flex-direction: column;
+  }
+
+  .cakehub-mission-gallery {
+    width: 100%;
+    height: 350px;
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .cakehub-about-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cakehub-about-hero {
+    height: 400px;
+  }
+
+  .cakehub-about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .cakehub-about-hero p {
+    font-size: 1.1rem;
+  }
+
+  .cakehub-mission-section, .cakehub-values-section,
+  .cakehub-team-section, .cakehub-cta-section {
+    padding: 60px 0;
+  }
+
+  .cakehub-mission-section h2, .cakehub-values-section h2,
+  .cakehub-team-section h2, .cakehub-cta-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .cakehub-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .cakehub-about-hero {
+    height: 350px;
+  }
+
+  .cakehub-hero-overlay {
+    padding: 30px 20px;
+  }
+
+  .cakehub-team-grid,
+  .cakehub-values-grid {
+    grid-template-columns: 1fr;
+  }
+}

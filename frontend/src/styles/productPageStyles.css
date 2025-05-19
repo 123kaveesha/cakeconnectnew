@@ -1,0 +1,277 @@
+.cakehub-products-page {
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.cakehub-products-page h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+/* Category Buttons */
+.cakehub-products-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.cakehub-products-filter button {
+  padding: 8px 16px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cakehub-products-filter button:hover {
+  background: #ddd;
+}
+
+.cakehub-products-filter .active {
+  background-color: #d65db1;
+  color: white;
+  border-color: #d65db1;
+}
+
+/* Product Grid */
+.cakehub-products-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.cakehub-product-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.cakehub-product-card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.cakehub-product-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Popup */
+.cakehub-product-popup {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.cakehub-popup-content {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.cakehub-popup-content.cakehub-two-columns {
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.cakehub-product-popup-left,
+.cakehub-product-popup-right {
+  flex: 1;
+}
+
+/* Close Button */
+.cakehub-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+}
+
+/* Product Info */
+.cakehub-product-popup-left img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.cakehub-cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cakehub-cart-actions input {
+  width: 60px;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.cakehub-cart-actions button {
+  padding: 0.5rem 1rem;
+  background-color: #d65db1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cakehub-cart-actions button:hover {
+  background-color: #c04399;
+}
+
+/* Reviews */
+.cakehub-product-popup-right {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.cakehub-product-popup-right h4 {
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.cakehub-product-popup-right h5 {
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.cakehub-review-item {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.cakehub-review-item p {
+  margin: 0.25rem 0;
+}
+
+.cakehub-review-item small {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.cakehub-review-item button {
+  margin-right: 0.5rem;
+  font-size: 0.85rem;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+.cakehub-review-item button:hover {
+  color: #d65db1;
+}
+
+/* Add Review Form */
+.cakehub-review-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cakehub-review-form textarea {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.cakehub-review-form button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cakehub-review-form button:hover {
+  background-color: #2980b9;
+}
+
+.cakehub-stars {
+  font-size: 3rem;
+  color: #ffc107;
+}
+
+.cakehub-stars span {
+  cursor: pointer;
+}
+
+/* Loader Spinner */
+.cakehub-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.cakehub-spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #d65db1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cakehub-popup-content.cakehub-two-columns {
+    flex-direction: column;
+  }
+
+  .cakehub-product-popup-left img {
+    max-height: 300px;
+  }
+
+  .cakehub-product-popup-right {
+    margin-top: 1rem;
+  }
+}

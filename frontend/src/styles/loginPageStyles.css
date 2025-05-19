@@ -1,0 +1,127 @@
+/* Layout */
+.auth-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9f3f3;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.auth-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-header h2 {
+  font-size: 2rem;
+  color: #d65db1;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group input {
+  width: 95%;
+  padding: 0.9rem 0.7rem;
+  border: 1px solid #e8d6d6;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #fdf9f9;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #d65db1;
+  background-color: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(214, 93, 177, 0.1);
+}
+
+/* Button */
+.auth-submit {
+  padding: 1rem;
+  background-color: #d65db1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.auth-submit:hover {
+  background-color: #c04c9e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(214, 93, 177, 0.2);
+}
+
+/* Footer */
+.auth-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.toggle-auth {
+  background: none;
+  border: none;
+  color: #d65db1;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+}
+
+.toggle-auth:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .auth-card {
+    padding: 1.5rem;
+  }
+}

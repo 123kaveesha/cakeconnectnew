@@ -1,0 +1,259 @@
+.cakehub-contact-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.cakehub-contact-hero {
+  background-color: #E3AEB5;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.cakehub-contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/images/back.png') center/cover;
+  opacity: 0.7;
+}
+
+.cakehub-hero-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cakehub-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.cakehub-hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.cakehub-contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.cakehub-contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.cakehub-form-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.cakehub-form-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cakehub-form-header h2 {
+  font-size: 1.8rem;
+  color: #5d2a2a;
+  margin-bottom: 10px;
+}
+
+.cakehub-form-header p {
+  color: #64748b;
+}
+
+.cakehub-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cakehub-form-group {
+  position: relative;
+}
+
+.cakehub-form-group input,
+.cakehub-form-group textarea {
+  width: 95%;
+  padding: 0.9rem 0.7rem;
+  border: 1px solid #E3AEB5;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fff9fa;
+}
+
+.cakehub-form-group input:focus,
+.cakehub-form-group textarea:focus {
+  outline: none;
+  border-color: #d47e7e;
+  box-shadow: 0 0 0 3px rgba(227, 174, 181, 0.3);
+}
+
+.cakehub-form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.cakehub-submit-btn {
+  background-color: #E3AEB5;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cakehub-submit-btn:hover {
+  background-color: #d47e7e;
+  transform: translateY(-2px);
+}
+
+.cakehub-success-message {
+  background-color: #f0fdf4;
+  color: #166534;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #bbf7d0;
+}
+
+.cakehub-error-message {
+  background-color: #fff0f0;
+  color: #b91c1c;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #fecaca;
+}
+
+.cakehub-contact-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.cakehub-info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cakehub-info-card:hover {
+  transform: translateY(-5px);
+}
+
+.cakehub-info-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #fdf2f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.cakehub-info-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #E3AEB5;
+}
+
+.cakehub-info-card h3 {
+  color: #5d2a2a;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.cakehub-info-card p {
+  color: #64748b;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.cakehub-info-link {
+  display: inline-block;
+  color: #E3AEB5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.cakehub-info-link:hover {
+  color: #d47e7e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cakehub-contact-hero {
+    padding: 60px 20px;
+  }
+
+  .cakehub-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .cakehub-hero-content p {
+    font-size: 1rem;
+  }
+
+  .cakehub-form-container {
+    padding: 30px;
+  }
+
+  .cakehub-contact-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cakehub-contact-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .cakehub-form-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .cakehub-form-group input,
+  .cakehub-form-group textarea {
+    width: 95%;
+  padding: 0.9rem 0.7rem;
+  }
+}
