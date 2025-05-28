@@ -10,4 +10,7 @@ I was unable to develop the event visualization section here, so I am waiting fo
 You can start this project by typing (npm start) in the terminal.
 Then both the frontend and backend will start at the same time.
 
+Admin Email - admin@gmail.com
+Admin Password - admin123
+
 Git Hub Repo Link - https://github.com/123kaveesha/cakeconnectnew.git
