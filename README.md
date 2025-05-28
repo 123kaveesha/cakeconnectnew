@@ -12,5 +12,6 @@ Then both the frontend and backend will start at the same time.
 
 Admin Email - admin@gmail.com
 Admin Password - admin123
+Bakers and customers can create an account and log in.
 
 Git Hub Repo Link - https://github.com/123kaveesha/cakeconnectnew.git
